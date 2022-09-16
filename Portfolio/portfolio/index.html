@@ -33,11 +33,11 @@
   
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-img">
-          <div class="container px-5">
+        <a class="navbar-brand px-5" href="#">
+          <img src="https://niwa.co.nz/sites/niwa.co.nz/files/niwa-2018-horizontal-final-400_0.png"height="70"alt=""/>
+        </a>
+
         <ul class="navbar-nav mb-lg-0">
-          <a class="navbar-brand" href="#">
-            <img src="https://niwa.co.nz/sites/niwa.co.nz/files/niwa-2018-horizontal-final-400_0.png"height="70"alt=""/>
-          </a>
           <li class="nav-item">
             <a class="nav-link"href="#" style="color:  rgb(5, 1, 68); font-size:20px"  onclick="showContent('home')"><b>Home</b></a>
           </li>
@@ -45,27 +45,28 @@
             <a class="nav-link"href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('about')"><b>About</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('research')"><b>Research</b></a>
+            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('research')"><b>Research & Upskilling</b></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('planning')"><b>Planning</b></a
+            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('planning')"><b>Planning & Control</b></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('communication')"><b>Communication</b></a
+            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('communication')"><b>Communication & Teamwork</b></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('devandqa')"><b>Development & QA</b></a>
+            <a class="nav-link" href="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('devandqa')"><b>Development & Quality Assurance</b></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" herf="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('Presentation')" ><b>Presentation</b></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" herf="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('Team_Workbooks')"><b>Logbook</b></a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" style="color: rgb(5, 1, 68); font-size:20px" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>Appendix</b></a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                <li><a class="dropdown-item" herf="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('Presentation')">Presentation Slides</a></li>
+                <li><a class="dropdown-item" herf="#" style="color: rgb(5, 1, 68); font-size:20px" onclick="showContent('Team_Workbooks')">Team WorkBooks</a></li>
+            </ul>
+        </li>
         </ul>
-        </div>
+
       </nav>
 
       <!--Header-->
@@ -83,8 +84,8 @@
                             <h1 class="display-5 fw-bolder text-white mb-2">Welcome to view our R&D team portfolio</h1>
                             <p class="lead fw-normal text-white-50 mb-4">This is a final year R&D project with AUT and NIWA. The goal of this project is to develop an Android application proof of concept to crowd-source data on heating emmissions from wood and coal burning in households.</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Read More</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#" onclick="showContent('research')">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -255,13 +256,13 @@
 <!-- About page-->
   <div class="hide" id="about">
 
-    <header class="py-5">
+    <header class="bg-dark py-5">
       <div class="container px-5">
           <div class="row justify-content-center">
               <div class="col-lg-8 col-xxl-6">
                   <div class="text-center my-5">
-                      <h1 class="fw-bolder mb-3">Our mission is to make report wood smoke incident easier for everyone live in Aotearoa New Zealand.</h1>
-                      <p class="lead fw-normal text-muted mb-4">Start to use woodsmoke monitoring Applcation Today with us!</p>
+                      <h1 class="fw-bolder text-white mb-3">Our mission is to make report wood smoke incident easier for everyone live in Aotearoa New Zealand.</h1>
+      
                       <a class="btn btn-primary btn-lg" href="#scroll-target">Read More</a>
                   </div>
               </div>
@@ -294,7 +295,7 @@
             </div>
         </div>
     </section>
-    
+    <!-- About section three-->
     <section class="py-5 bg-light">
       <div class="container px-5 my-5">
           <div class="text-center">
@@ -340,12 +341,26 @@
   <!-- Research page-->
                   <div class="hide" id="research" >
 
-                    <header class="py-5">
+                    <header class="bg-dark py-5">
                       <div class="container px-5">
                           <div class="row justify-content-center">
                               <div class="col-lg-8 col-xxl-6">
                                   <div class="text-center my-5">
-                                    <h2 class="fw-bolder">Research</h2>               
+                                      <h1 class="fw-bolder text-white mb-3">Why we need to do a project research?</h1>
+                                      <p class="lead fw-normal text-white text-muted mb-4">The main purposes of research are to inform action, gather evidence for theories, and contribute to developing knowledge in a field of study</p>
+                                      <a class="btn btn-primary btn-lg" href="#research1">Read More</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </header>
+<!-- section one -->
+                    <header class="py-5" id="research1">
+                      <div class="container px-5">
+                          <div class="row justify-content-center">
+                              <div class="col-lg-8 col-xxl-6">
+                                  <div class="text-center my-5">
+                                    <h2 class="fw-bolder" >Research</h2>               
                     <ul>
                       <li>
                         <a
@@ -468,7 +483,21 @@
 <!--Planning-->
       <div class="hide" id="planning" >
 
-        <header class="py-5">
+        <header class="bg-dark py-5">
+          <div class="container px-5">
+              <div class="row justify-content-center">
+                  <div class="col-lg-8 col-xxl-6">
+                      <div class="text-center my-5">
+                          <h1 class="fw-bolder text-white mb-3">Why we need to do project planning?</h1>
+                          <p class="lead fw-normal text-white text-muted mb-4">Project planning plays an essential role in helping guide stakeholders, sponsors, teams, and the project manager through other project phases. Planning is needed to identify desired goals, reduce risks, avoid missed deadlines, and ultimately deliver the agreed product, service or result.</p>
+                          <a class="btn btn-primary btn-lg" href="#planning1">Read More</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+        <header class="py-5" id="planning1">
           <div class="container px-5">
               <div class="row justify-content-center">
                   <div class="col-lg-8 col-xxl-6">
@@ -653,7 +682,21 @@
 <!--Communication-->
                 <div class="hide" id="communication" >
 
-                  <header class="py-5">
+                  <header class="bg-dark py-5">
+                    <div class="container px-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 col-xxl-6">
+                                <div class="text-center my-5">
+                                    <h1 class="fw-bolder text-white mb-3">Why communication is important? </h1>
+                                    <p class="lead fw-normal text-white text-muted mb-4">Good communication keeps conflict and confusion from bogging your project down by ensuring key players are aligned on project goals and know exactly what's expected of them. It also helps build team-wide trust so everyone works better together from project start to finish.</p>
+                                    <a class="btn btn-primary btn-lg" href="#communication1">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                  <header class="py-5" id="communication1">
                     <div class="container px-5">
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-xxl-6">
@@ -725,7 +768,21 @@
       <!--Development & Quanlity Assurance-->
                       <div class="hide" id="devandqa" >
 
-                        <header class="py-5">
+                        <header class="bg-dark py-5">
+                          <div class="container px-5">
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-8 col-xxl-6">
+                                      <div class="text-center my-5">
+                                          <h1 class="fw-bolder text-white mb-3">Why is development important?</h1>
+                                          <p class="lead fw-normal text-white text-muted mb-4">As well as creating better jobs, development is important for a country because it improves business and trade. As countries develop more international companies move in and trade with other countries grows. This further improves the countries economy and also further increases the range of good jobs on offer.</p>
+                                          <a class="btn btn-primary btn-lg" href="#qa">Read More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </header>
+
+                        <header class="py-5" id="qa">
                           <div class="container px-5">
                               <div class="row justify-content-center">
                                   <div class="col-lg-8 col-xxl-6">
@@ -752,7 +809,21 @@
       <!--Presentation-->
                       <div class="hide" id="Presentation" >
 
-                        <header class="py-5">
+                        <header class="bg-dark py-5">
+                          <div class="container px-5">
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-8 col-xxl-6">
+                                      <div class="text-center my-5">
+                                          <h1 class="fw-bolder text-white mb-3">What Are Benefits of PowerPoint?</h1>
+                                          <p class="lead fw-normal text-white text-muted mb-4"> It can even help reduce speaking anxiety by drawing eyes away from the speaker and towards a screen. Just do not expect this technology to substitute for sound and dynamic speaking skills.</p>
+                                          <a class="btn btn-primary btn-lg" href="#presentation1">Read More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </header>
+
+                        <header class="py-5" id="presentation1">
                           <div class="container px-5">
                               <div class="row justify-content-center">
                                   <div class="col-lg-8 col-xxl-6">
@@ -792,7 +863,22 @@
       <!--Team workbooks-->
                       <div class="hide" id="Team_Workbooks" >
 
-                        <header class="py-5">
+                        <header class="bg-dark py-5">
+                          <div class="container px-5">
+                              <div class="row justify-content-center">
+                                  <div class="col-lg-8 col-xxl-6">
+                                      <div class="text-center my-5">
+                                          <h1 class="fw-bolder text-white mb-3">Why we should keep a worklog?</h1>
+                                          <p class="lead fw-normal text-white text-muted mb-4">The prioritized daily task list and appointments were the easy part. They represented the plan. If everything went according to plan, then I would have a perfect record of what I did that day, and who I met with. When was the last time your day went exactly like you planned?
+                                             This look back at the day will help you get a better picture of what you’re doing with your time and get better at getting things done.</p>
+                                          <a class="btn btn-primary btn-lg" href="#teamwork">Read More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </header>
+
+                        <header class="py-5" id="teamwork">
                           <div class="container px-5">
                               <div class="row justify-content-center">
                                   <div class="col-lg-8 col-xxl-6">
@@ -843,7 +929,7 @@
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2022</div></div>
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Niwa R&D Team 2022</div></div>
                     <div class="col-auto">
                         <a class="link-light small" href="#!">Privacy</a>
                         <span class="text-white mx-1">&middot;</span>

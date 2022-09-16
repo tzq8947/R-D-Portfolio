@@ -93,10 +93,16 @@ div.content {
 
 ul {
   list-style-type: none;
+  
 }
 
 div.show{
   display: block;
+}
+
+/*background color*/
+.bkcolor {
+  background-color: #001440;
 }
 
 div.hide {
@@ -7508,6 +7514,11 @@ textarea.form-control-lg {
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
+}
+
+.px-6 {
+  padding-right: 4rem !important;
+  padding-left: 4rem !important;
 }
 
 .py-0 {
