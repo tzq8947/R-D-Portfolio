@@ -24,4 +24,9 @@ function showContent(id) {
       $("div#Team_Workbooks")
       .removeClass(id == "Team_Workbooks" ? "hide" : "show")
       .addClass(id == "Team_Workbooks" ? "show" : "hide");
+      $("div#Reflection")
+      .removeClass(id == "Reflection" ? "hide" : "show")
+      .addClass(id == "Reflection" ? "show" : "hide");
   }
+
+  
