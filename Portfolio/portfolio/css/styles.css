@@ -11364,3 +11364,34 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+li.nav-item {
+  padding-top: 20px;
+}
+div.content {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+div.show{
+  display: block;
+}
+
+div.hide {
+  display: none;
+}
+
+nav {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
