@@ -59,7 +59,7 @@
 
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav w-100">
               <li class="nav-item">
                 <a
                   class="nav-link underline"
@@ -151,6 +151,7 @@
                 </div>
               </li>
             </ul>
+              <i class="bi bi-info-circle-fill" id="info-icon"></i>
           </div>
         </div>
       </nav>
@@ -222,7 +223,11 @@
                     Check air qualtiy information near you using data pulled
                     from the World Quality Index.
                   </p>
-                  <img src="Portfolio/portfolio-code/img/waqi_map.png" height="500" class="align-self-center mt-3"/>
+                  <img
+                    src="Portfolio/portfolio-code/img/waqi_map.png"
+                    height="500"
+                    class="align-self-center mt-3"
+                  />
                 </div>
                 <div class="col mb-5 h-100 d-flex flex-column">
                   <div
@@ -235,7 +240,11 @@
                     Check to see if users have reported any smoke incidents near
                     you.
                   </p>
-                  <img src="Portfolio/portfolio-code/img/smoke_report_map.png" height="500" class="align-self-center mt-3"/>
+                  <img
+                    src="Portfolio/portfolio-code/img/smoke_report_map.png"
+                    height="500"
+                    class="align-self-center mt-3"
+                  />
                 </div>
                 <div class="col mb-5 h-100 d-flex flex-column">
                   <div
@@ -248,7 +257,11 @@
                     Have a look at our various fun visualisations on smoke
                     report and air quality data on your home page.
                   </p>
-                  <img src="Portfolio/portfolio-code/img/home_page.png" height="500" class="align-self-center mt-3"/>
+                  <img
+                    src="Portfolio/portfolio-code/img/home_page.png"
+                    height="500"
+                    class="align-self-center mt-3"
+                  />
                 </div>
                 <div class="col mb-5 h-100 d-flex flex-column">
                   <div
@@ -260,7 +273,11 @@
                   <p class="mb-0">
                     Allows you to report a smoke incident anywhere and anytime.
                   </p>
-                  <img src="Portfolio/portfolio-code/img/smoke_report_page.png" height="495" class="align-self-center mt-5"/>
+                  <img
+                    src="Portfolio/portfolio-code/img/smoke_report_page.png"
+                    height="495"
+                    class="align-self-center mt-5"
+                  />
                 </div>
                 <div class="col mb-5 mb-md-0 h-100 d-flex flex-column">
                   <div
@@ -270,7 +287,11 @@
                   </div>
                   <h2 class="h5">Report history</h2>
                   <p class="mb-0">View your past reporting history here.</p>
-                  <img src="Portfolio/portfolio-code/img/smoke_report_history_list.png" height="495" class="align-self-center mt-5"/>
+                  <img
+                    src="Portfolio/portfolio-code/img/smoke_report_history_list.png"
+                    height="495"
+                    class="align-self-center mt-5"
+                  />
                 </div>
                 <div class="col h-100 d-flex flex-column">
                   <div
@@ -282,7 +303,11 @@
                   <p class="mb-0">
                     Read about the impacts of woodsmoke on our environment.
                   </p>
-                  <img src="Portfolio/portfolio-code/img/information_page.png" height="500" class="align-self-center mt-3"/>
+                  <img
+                    src="Portfolio/portfolio-code/img/information_page.png"
+                    height="500"
+                    class="align-self-center mt-3"
+                  />
                 </div>
               </div>
             </div>
@@ -1126,21 +1151,47 @@
       </div>
     </footer>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Please Read</h5>
-            <button type="button" class="btn-sm btn-danger" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="btn-sm btn-danger"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            In order for the links to work, please ensure that you are logged to your AUT OneDrive and that you have access to our shared R&D folder for NIWA.
-            <br><br>Moreover, if you want to view the GitHub repository related links, please ensure you are either a collaborator or you are logged in using the woodsmoke.app.niwa@gmail.com GitHub account.   
+            In order for the links to work, please ensure that you are logged to
+            your AUT OneDrive and that you have access to our shared R&D folder
+            for NIWA.
+            <br /><br />Moreover, if you want to view the GitHub repository
+            related links, please ensure you are either a collaborator or you
+            are logged in using the woodsmoke.app.niwa@gmail.com GitHub account.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-dismiss="modal"
+              id="neverShowModalBtn"
+            >
+              Never Show Again
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Bootstrap core JS-->
     <script

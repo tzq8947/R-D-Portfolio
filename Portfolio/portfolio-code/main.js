@@ -12,6 +12,7 @@ const DIV_IDS = [
 const APPENDIX_DIV_IDS = ["Presentation", "Team_Workbooks"];
 const DROPDOWN_ID = "navbarDropdownPortfolio";
 const LAST_PAGE_ID_KEY = "lastPageKey";
+const IS_MODAL_PERMANENTLY_HIDDEN_KEY = "isModalPermanentlyHiddenKey";
 const LAST_PAGE_ID_DEFAULT = "home";
 
 const showContent = (id) => {
@@ -50,9 +51,22 @@ const showContent = (id) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Show last page visited from cache on first load.
   const lastPageId =
     window.localStorage.getItem(LAST_PAGE_ID_KEY) ?? LAST_PAGE_ID_DEFAULT;
+  const isShownOnLoad =
+    (window.localStorage.getItem(IS_MODAL_PERMANENTLY_HIDDEN_KEY) ?? "true") === "true";
+
+  const permanentlyHideModal = () => {
+    window.localStorage.setItem(IS_MODAL_PERMANENTLY_HIDDEN_KEY, "false");
+  };
+
+  const showModal = () => {
+    $("#exampleModal").modal("toggle");
+  };
+
   showContent(lastPageId);
-  $("#exampleModal").modal("toggle");
+  if (isShownOnLoad) showModal();
+
+  $("#info-icon").click(showModal)
+  $("#neverShowModalBtn").click(permanentlyHideModal);
 });

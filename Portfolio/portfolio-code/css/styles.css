@@ -12354,3 +12354,12 @@ ul {
 .nav-bg-grey {
   background-color: rgba(218, 223, 225, .7);
 }
+
+#info-icon {
+  font-size: 20px;
+}
+
+#info-icon:hover {
+  cursor: pointer;
+  color: var(--bs-blue);
+}
