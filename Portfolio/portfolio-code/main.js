@@ -44,7 +44,7 @@ const showContent = (id) => {
       }
     }
   });
-  
+
   // Save last page visited to cache.
   window.localStorage.setItem(LAST_PAGE_ID_KEY, id);
 };
@@ -54,4 +54,5 @@ window.addEventListener("DOMContentLoaded", () => {
   const lastPageId =
     window.localStorage.getItem(LAST_PAGE_ID_KEY) ?? LAST_PAGE_ID_DEFAULT;
   showContent(lastPageId);
+  $("#exampleModal").modal("toggle");
 });
